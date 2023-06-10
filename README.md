@@ -1,2 +1,2 @@
-# docker-template
-Template for future Docker repos
+# docker-base 
+Docker image to use as initial layer for functional containers
