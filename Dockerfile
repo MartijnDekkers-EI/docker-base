@@ -1,12 +1,13 @@
-FROM debian:11-slim
+FROM debian:bookworm-slim
 ARG IMGVERSION
 
-LABEL org.label-schema.name="Base Container"
-LABEL org.label-schema.schema-version="1.0"
-LABEL org.label-schema.description="This is the image that other images are based on"
-LABEL org.label-schema.url="https://github.com/MartijnDekkers-EI/docker-base/blob/main/README.md"
-LABEL org.label-schema.vcs-url="https://github.com/MartijnDekkers-EI/docker-base"
-LABEL org.label-schema.version=${IMGVERSION}
+LABEL org.label-schema.name="Base Container" \
+    org.label-schema.schema-version="1.0" \
+    org.label-schema.description="This is the image that other images are based on" \
+    org.label-schema.vendor="Aer Lingus" \
+    org.label-schema.url="https://github.com/MartijnDekkers-EI/docker-base/blob/main/README.md" \
+    org.label-schema.vcs-url="https://github.com/MartijnDekkers-EI/docker-base" \
+    org.label-schema.version=${IMGVERSION}
 
 # Install basic utils
 RUN apt-get update \
