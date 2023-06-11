@@ -1,5 +1,6 @@
 FROM debian:bookworm-slim
 ARG IMGVERSION
+ARG DEBIAN_FRONTEND=noninteractive
 
 LABEL org.label-schema.name="Base Container" \
     org.label-schema.schema-version="1.0" \
